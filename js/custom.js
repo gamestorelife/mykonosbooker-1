@@ -26,29 +26,28 @@ document.getElementById("apparts-smenu").style.display = "none";
 
 /**Adults   */
 
+window.onload = myFunction();
+
+function myFunction () {
+	$('.super_container').hide()
+	
+}
 
 
+window.addEventListener('load', (event) => {
+	
+	$('.super_container').show()
+    
+});
 
 
-
-document.onreadystatechange = function() {
-	if (document.readyState !== "complete") {
-		document.querySelector(
-		"body").style.visibility = "hidden";
-		document.querySelector(
-		"#loader").style.visibility = "visible";
-	} else {
-		document.querySelector(
-		"#loader").style.display = "none";
-		document.querySelector(
-		"body").style.visibility = "visible";
-	}
-};
-  
-
-
-
-
+window.onload = function() {
+	
+	var loadingDiv = document.getElementById('loader');
+	loadingDiv.style.display = 'none';
+	
+	
+ }
 
 
 
@@ -61,6 +60,9 @@ document.onreadystatechange = function() {
 
 
 $(function() { 
+
+	
+
 	$('.menu2').addClass('hiddenm');
 	$('.menu2-hotel').addClass('hiddenm');
 	$('.menu2-apart').addClass('hiddenm');
