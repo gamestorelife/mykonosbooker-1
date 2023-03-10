@@ -35,9 +35,7 @@ function myFunction () {
 
 
 window.addEventListener('load', (event) => {
-	
-	$('.super_container').show()
-    
+	$('.super_container').show() 
 });
 
 
@@ -45,7 +43,6 @@ window.onload = function() {
 	
 	var loadingDiv = document.getElementById('loader');
 	loadingDiv.style.display = 'none';
-	
 	
  }
 
