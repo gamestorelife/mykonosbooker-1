@@ -30,7 +30,7 @@ window.onload = myFunction();
 
 function myFunction () {
 	$('.super_container').hide()
-	console.log("should be hidin")
+	console.log("should be hidin all")
 	
 }
 
