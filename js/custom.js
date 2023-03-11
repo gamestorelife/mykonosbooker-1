@@ -36,7 +36,7 @@ function myFunction () {
 
 
 window.addEventListener('load', (event) => {
-	 
+	
 });
 
 
@@ -44,6 +44,7 @@ window.onload = function() {
 	$('.super_container').show()
 	var loadingDiv = document.getElementById('loader');
 	loadingDiv.style.display = 'none';
+	$('.super_container').show()
 	
  }
 
@@ -60,7 +61,7 @@ window.onload = function() {
 $(function() { 
 
 	
-
+	$('.super_container').hide()
 	$('.menu2').addClass('hiddenm');
 	$('.menu2-hotel').addClass('hiddenm');
 	$('.menu2-apart').addClass('hiddenm');
