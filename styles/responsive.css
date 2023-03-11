@@ -869,6 +869,7 @@
 		transform: translateX(-50%);
 		background: linear-gradient(to right, #7f82f0 0%, #5ad2d4 100%);
 		z-index:4;
+		overflow: auto;
 }
 
 .menu2-apart {
@@ -1098,6 +1099,16 @@ table {
 }
 
 .red-notification-hotel {
+	align-items: center;
+	text-align: center;
+	border-radius: 5px;
+	background-color: rgba(197, 24, 24, 0.955);
+	width: 40%;
+	height: 20px;
+	margin-bottom: 10px;
+}
+
+.red-notificationR1-hotel {
 	align-items: center;
 	text-align: center;
 	border-radius: 5px;
@@ -1624,6 +1635,7 @@ table {
 	transform: translateX(-50%);
 	background: linear-gradient(to right, #7f82f0 0%, #5ad2d4 100%);
 	z-index:4;
+	overflow: auto;
 }
 
 .menu2-apart {
@@ -1793,6 +1805,15 @@ table {
 }
 
 .red-notification-hotel {
+	align-items: center;
+	text-align: center;
+	border-radius: 5px;
+	background-color: rgba(197, 24, 24, 0.955);
+	width: 40%;
+	height: 20px;
+	margin-bottom: 10px;
+}
+.red-notificationR1-hotel {
 	align-items: center;
 	text-align: center;
 	border-radius: 5px;
@@ -2318,6 +2339,7 @@ table {
 	transform: translateX(-50%);
 	background: linear-gradient(to right, #7f82f0 0%, #5ad2d4 100%);
 	z-index:4;
+	overflow: auto;
 }
 
 .menu2-apart {
@@ -2479,6 +2501,15 @@ table {
 	margin-bottom: 20px;
 }
 .red-notification-hotel {
+	align-items: center;
+	text-align: center;
+	border-radius: 5px;
+	background-color: rgba(197, 24, 24, 0.955);
+	width: 40%;
+	height: 20px;
+	margin-bottom: 10px;
+}
+.red-notificationR1-hotel {
 	align-items: center;
 	text-align: center;
 	border-radius: 5px;
@@ -3001,6 +3032,8 @@ table {
 	transform: translateX(-50%);
 	background: linear-gradient(to right, #7f82f0 0%, #5ad2d4 100%);
 	z-index:4;
+	overflow: auto;
+	overflow: auto;
 }
 
 .menu2-apart {
@@ -3157,6 +3190,16 @@ table {
 }
 
 .red-notification-hotel {
+	align-items: center;
+	text-align: center;
+	border-radius: 5px;
+	background-color: rgba(197, 24, 24, 0.955);
+	width: 40%;
+	height: 20px;
+	margin-bottom: 10px;
+}
+
+.red-notificationR1-hotel {
 	align-items: center;
 	text-align: center;
 	border-radius: 5px;
