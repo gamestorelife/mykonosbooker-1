@@ -138,6 +138,12 @@ $(document).ready(function()
 			else if ( $('.selec-Children').val() == '6' ) kid6();
 		  });
 
+
+		$('.selec-Rooms-hotel').on('change', function(){
+			if ($('.selec-Rooms-hotel').val() == '1') hideAllRooms();
+			else if ($('.selec-Rooms-hotel').val() == '2') showRoom1();
+		})  
+
 		  $('.selec-Children-hotel').on('change', function() {
     
 			if ( $('.selec-Children-hotel').val() == '0' ) kidzHotel();
@@ -1291,7 +1297,9 @@ function hero1Services () {
 		function allpersonsHotels() {
 			var tradults = $("#qty1-hotel").val();
 			var allkids = $(".selec-Children-hotel").val();
+			var hallrooms = $(".selec-Rooms-hotel").val();
 
+			document.getElementById("alrooms").innerHTML = hallrooms;
 			document.getElementById("aladults-hotel").innerHTML = tradults;
 			document.getElementById("alkids-hotel").innerHTML = allkids;
 			
@@ -2141,17 +2149,25 @@ function hero1Services () {
 
 
 
-	$('.add-1st-room').click(function(){
-		$('#room1-hide').hide();
-		
+
+	function hideAllRooms() {
+		$('#room2').hide();
+		$('#room2-adult').hide();
+		$('#room2-adult-valu').hide();
+		$('#room2-kids').hide();
+		$('#room2-kids-valu').hide();
+	}
+
+
+function showRoom1() {
 	$('#room2').show();
 	$('#room2-adult').show();
 	$('#room2-adult-valu').show();
 	$('#room2-kids').show();
 	$('#room2-kids-valu').show();
-	$('.add-2nd-room').show();
-		
-	})
+}
+
+
 
 
 
