@@ -36,12 +36,12 @@ function myFunction () {
 
 
 window.addEventListener('load', (event) => {
-	$('.super_container').show() 
+	 
 });
 
 
 window.onload = function() {
-	
+	$('.super_container').show()
 	var loadingDiv = document.getElementById('loader');
 	loadingDiv.style.display = 'none';
 	
