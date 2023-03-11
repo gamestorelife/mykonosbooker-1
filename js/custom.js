@@ -29,14 +29,14 @@ document.getElementById("apparts-smenu").style.display = "none";
 window.onload = myFunction();
 
 function myFunction () {
-	$('.super_container').hide()
+	
 	console.log("should be hidin all")
 	
 }
 
 
 window.addEventListener('load', (event) => {
-	$('.super_container').show()
+	
 });
 
 
@@ -44,8 +44,9 @@ window.onload = function() {
 	
 	var loadingDiv = document.getElementById('loader');
 	loadingDiv.style.display = 'none';
+	$('#good-div').removeClass('main-hide')
 	
-	
+	console.log("should be hidin all")
  }
 
 
@@ -61,7 +62,7 @@ window.onload = function() {
 $(function() { 
 
 	
-	$('.super_container').hide()
+	
 	$('.menu2').addClass('hiddenm');
 	$('.menu2-hotel').addClass('hiddenm');
 	$('.menu2-apart').addClass('hiddenm');

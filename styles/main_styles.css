@@ -214,6 +214,10 @@ section
 {
 	height: 100%;
 }
+
+.main-hide {
+	display: none;
+}
 .super_container
 {
 	width: 100%;
