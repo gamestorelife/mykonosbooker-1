@@ -925,6 +925,7 @@
 	.menu_content {
 		width: 100%;
 		display: flex;
+		overflow: auto;
 		
 	}
 	
@@ -1658,6 +1659,7 @@ table {
 	.menu_content {
 		width: 100%;
 		display: flex;
+		overflow: auto;
 		
 	}
 	
@@ -2362,6 +2364,7 @@ table {
 	.menu_content {
 		width: 100%;
 		display: flex;
+		overflow: auto;
 		
 	}
 	
@@ -3055,6 +3058,7 @@ table {
 	.menu_content {
 		width: 100%;
 		display: flex;
+		overflow: auto;
 		
 	}
 	
