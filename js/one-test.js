@@ -8,11 +8,34 @@ villaform.addEventListener('submit', (event) => {
     const datein = villaform.elements['villas-in-date'].value;
     const dateout = villaform.elements['villas-out-date'].value;
     const bedrooms = villaform.elements['villas-bedrooms'].value;
+
+    
+    
+    const dateComponents = datein.split("-");
+
+    const year = dateComponents[0];
+    const month = dateComponents[1];
+    const day = dateComponents[2];
   
     console.log(`In: ${datein}`);
+    console.log(`year: ${year}`);
+    console.log(`month: ${month}`);
+    console.log(`day: ${day}`);
+
+    const dateComponentsout = dateout.split("-");
+    const yearout = dateComponentsout[0];
+    const monthout = dateComponentsout[1];
+    const dayout = dateComponentsout[2];
+
     console.log(`out: ${dateout}`);
+    
+    console.log(`year: ${yearout}`);
+    console.log(`month: ${monthout}`);
+    console.log(`day: ${dayout}`);
+
     console.log(`rooms: ${bedrooms}`);
-    window.location.href = `https://bookings.mykonosbooker.com/#/search/2023~2F03~2F11/2023~2F03~2F25/Athens%20Center,%20Athens/OT-LOC-GEO-9186/(nationality:75,rooms:${bedrooms}!(('$$hashKey':'object:51',adults:2,children:0,childrenAges:!(),quantity:1)),searchOnRequestRooms:!f,stars:(max:5,min:0))`;
+    window.location.href = `https://bookings.mykonosbooker.com/#/search/${year}~2F${month}~2F${day}/${yearout}~2F${monthout}~2F${dayout}/Athens%20Center,%20Athens/OT-LOC-GEO-9186/(nationality:75,rooms:!(('$$hashKey':'object:45',adults:2,children:0,childrenAges:!(),quantity:1)),searchOnRequestRooms:!f,stars:(max:5,min:0)) `;    
+
   });
 
   hotelform.addEventListener('submit', (event) => {
@@ -37,7 +60,8 @@ villaform.addEventListener('submit', (event) => {
     console.log(`kid1: ${hotelkid4}`);
     console.log(`kid1: ${hotelkid5}`);
     console.log(`kid1: ${hotelkid6}`);
-    
+    window.location.href = `https://bookings.mykonosbooker.com/#/search/2023~2F03~2F11/2023~2F03~2F25/Athens%20Center,%20Athens/OT-LOC-GEO-9186/(nationality:75,rooms:!(('$$hashKey':'object:51',adults:${halladult},children:${hallkids},childrenAges:!(${hotelkid1},${hotelkid2},${hotelkid3},${hotelkid3},${hotelkid4},${hotelkid5},${hotelkid6}),quantity:1)),searchOnRequestRooms:!f,stars:(max:5,min:0))`;
+ 
 
 });
 
