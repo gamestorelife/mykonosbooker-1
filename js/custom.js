@@ -93,6 +93,8 @@ $(function() {
 	$('.mkids-hotelR1-age2').hide();
 	$('.mkids-hotelR1-age3').hide();
 	$('.mkids-hotelR1-age4').hide();
+	$('.mkids-hotelR1-age5').hide()
+	$('.mkids-hotelR1-age6').hide()
 
 
 	$('.mkids-services-age1').hide();
@@ -1785,7 +1787,6 @@ function hero1Services () {
 			$('.mkids-hotel-age4').show()
 			$('.mkids-hotel-age5').hide()
 			$('.mkids-hotel-age6').hide()
-			
 			ageNote4Hotel()
 		}
 		function ageNote4Hotel() {
@@ -1804,7 +1805,17 @@ function hero1Services () {
 			$('.mkids-hotelR1-age4').show()
 			$('.mkids-hotelR1-age5').hide()
 			$('.mkids-hotelR1-age6').hide()
+			ageNote4HotelR1()
 		}
+
+		function ageNote4HotelR1() {
+			ageNote1HotelR2()
+			ageNote2HotelR1()
+			ageNote3HotelR1()
+			
+			if ($('.4rthkid-R2hotel').val() == '0') doAgeR2Hotel();
+			else if ($('.4rthkid-R2hotel').val() >= '1') ageDoneR2Hotel();
+		};
 
 
 
@@ -1897,6 +1908,29 @@ function hero1Services () {
 			if ($('.5kid-hotel').val() == '0') doAgeHotel();
 			else if ($('.5kid-hotel').val() >= '1') ageDoneHotel();
 		};
+
+
+		function kid5HotelR1() {
+			$('.mkids-hotelR1-age1').show()
+			$('.mkids-hotelR1-age2').show()
+			$('.mkids-hotelR1-age3').show()
+			$('.mkids-hotelR1-age4').show()
+			$('.mkids-hotelR1-age5').show()
+			$('.mkids-hotelR1-age6').hide()
+			ageNote5HotelR1()
+		}
+
+		function ageNote5HotelR1() {
+			ageNote1HotelR2()
+			ageNote2HotelR1()
+			ageNote3HotelR1()
+			ageNote4HotelR1()
+			
+			if ($('.5kid-R2hotel').val() == '0') doAgeR2Hotel();
+			else if ($('.5kid-R2hotel').val() >= '1') ageDoneR2Hotel();
+		};
+
+
 
 
 		
@@ -1998,7 +2032,26 @@ function hero1Services () {
 		};
 
 
+		function kid6HotelR1() {
+			$('.mkids-hotelR1-age1').show()
+			$('.mkids-hotelR1-age2').show()
+			$('.mkids-hotelR1-age3').show()
+			$('.mkids-hotelR1-age4').show()
+			$('.mkids-hotelR1-age5').show()
+			$('.mkids-hotelR1-age6').show()
+			ageNote6HotelR1()
+		}
 
+		function ageNote6HotelR1() {
+			ageNote1HotelR2()
+			ageNote2HotelR1()
+			ageNote3HotelR1()
+			ageNote4HotelR1()
+			ageNote5HotelR1()
+			
+			if ($('.6kid-R2hotel').val() == '0') doAgeR2Hotel();
+			else if ($('.6kid-R2hotel').val() >= '1') ageDoneR2Hotel();
+		};
 
 	
 		function kid6Apart() 
@@ -2246,11 +2299,10 @@ function hero1Services () {
 
 
 	function hideAllRooms() {
-		$('#room2').hide();
-		$('#room2-adult').hide();
-		$('#room2-adult-valu').hide();
-		$('#room2-kids').hide();
-		$('#room2-kids-valu').hide();
+		$('#dash-room2').hide();
+		console.log("hide shoud work")
+		
+
 	}
 
 
