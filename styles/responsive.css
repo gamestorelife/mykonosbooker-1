@@ -961,40 +961,26 @@
 
 
 
-#room1 {
-	
+#allroom {
 	height: 30px;
 	text-align:left;
-	
 	font-weight: 800;
-	
 }
+
+
 .counters-d {
-	text-align: right;
-	
-	
-	
-	
+	text-align: right;	
 }
 
 table {
-	width: 100%;
-	
-	
-	
+	width: 100%;	
 }
 
 
 
 .selec-p {
 	text-align: left;
-	height: 60px;
-	
-	
-	
-	
-	
-	
+	height: 60px;	
 }
 .maintr {
 	height: 40px;
@@ -1675,13 +1661,15 @@ table {
 	
 	
 }
-#room1 {
+#allroom {
 	
 	height: 30px;
 	text-align:left;
 	font-weight: 800;
 	
 }
+
+
 #close-ignore {
 	height: 30px;
 	text-align:right;
@@ -2380,7 +2368,7 @@ table {
 	
 	
 }
-#room1 {
+#allroom {
 	
 	height: 30px;
 	text-align:left;
@@ -2388,6 +2376,8 @@ table {
 	font-weight: 800;
 	
 }
+
+
 .counters-d {
 	text-align: right;
 	
@@ -3074,7 +3064,7 @@ table {
 	
 	
 }
-#room1 {
+#allroom {
 	
 	height: 30px;
 	text-align:left;
@@ -3082,6 +3072,8 @@ table {
 	font-weight: 800;
 	
 }
+
+
 .counters-d {
 	text-align: right;
 	

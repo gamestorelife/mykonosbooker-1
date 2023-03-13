@@ -1603,8 +1603,13 @@ function hero1Services () {
 			$('.mkids-hotelR1-age4').hide()
 			$('.mkids-hotelR1-age5').hide()
 			$('.mkids-hotelR1-age6').hide()
+			ageNote2HotelR1()
 		}
-
+		function ageNote2HotelR1() {
+			ageNote1HotelR2();
+			if ($('.2kid-R2hotel').val() == '0') doAgeR2Hotel();
+			else if($('.2kid-R2hotel').val() >= '1') ageDoneR2Hotel();
+		}
 
 
 
@@ -1695,6 +1700,15 @@ function hero1Services () {
 			$('.mkids-hotelR1-age4').hide()
 			$('.mkids-hotelR1-age5').hide()
 			$('.mkids-hotelR1-age6').hide()
+			ageNote3HotelR1()
+		}
+
+		function ageNote3HotelR1() {
+			ageNote1HotelR2()
+			ageNote2HotelR1()
+			if($('.3rdkid-R2hotel').val() == '0') doAgeR2Hotel();
+			else if ($('.3rdkid-R2hotel').val() >= '1') ageDoneR2Hotel();
+
 		}
 
 
@@ -1782,6 +1796,15 @@ function hero1Services () {
 			if ($('.4rthkid-hotel').val() == '0') doAgeHotel();
 			else if ($('.4rthkid-hotel').val() >= '1') ageDoneHotel();
 		};
+
+		function kid4HotelR1() {
+			$('.mkids-hotelR1-age1').show()
+			$('.mkids-hotelR1-age2').show()
+			$('.mkids-hotelR1-age3').show()
+			$('.mkids-hotelR1-age4').show()
+			$('.mkids-hotelR1-age5').hide()
+			$('.mkids-hotelR1-age6').hide()
+		}
 
 
 
