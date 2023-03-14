@@ -115,12 +115,9 @@ $(function() {
 	$('.dash-hire-driv').hide();
 	$("#return-day").hide();
 
-	$('#room2').hide();
-	$('#room2-adult').hide();
-	$('#room2-adult-valu').hide();
-	$('#room2-kids').hide();
-	$('#room2-kids-valu').hide();
-	$('.add-2nd-room').hide();
+	
+	$('#dash-room2').hide();
+	
  });
 
 
@@ -1390,10 +1387,10 @@ function hero1Services () {
 		}
 		
 		function hideHotels(){
-			$('.menu2-hotel').hide();
+			$('.menu2-hotel').hide(100);
 		}
 		function staystillHotel(){
-			$('.menu2-hotel').show();
+			$('.menu2-hotel').show(200);
 		}
 
 
@@ -2112,7 +2109,7 @@ function hero1Services () {
 		
 		$('.hamburger2-hotel').click(function(){
 			
-			$('.menu2-hotel').show();
+			$('.menu2-hotel').show(200);
 		});
 		
 		
@@ -2300,18 +2297,14 @@ function hero1Services () {
 
 	function hideAllRooms() {
 		$('#dash-room2').hide();
-		console.log("hide shoud work")
+		
 		
 
 	}
 
 
 function showRoom1() {
-	$('#room2').show();
-	$('#room2-adult').show();
-	$('#room2-adult-valu').show();
-	$('#room2-kids').show();
-	$('#room2-kids-valu').show();
+	$('#dash-room2').show();
 }
 
 
