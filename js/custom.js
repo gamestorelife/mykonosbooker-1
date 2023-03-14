@@ -304,7 +304,28 @@ $(document).ready(function()
 
 /* End hotel Logic1*/
 
+/* Hotel Logic1 Room2*/
+$('.1stkid-R2hotel').on('change', function(){
+	if ($('.1stkid-R2hotel').val() == '0') doAgeR2Hotel();
+	else if ($('.1stkid-R2hotel').val() >= '1') ageR2logic1hotel();
+});
 
+function ageR2logic1hotel() {
+	if ($('.selec-Children-hotelR1').val() >= '2'  &  $('.2kid-R2hotel').val() == '0') doAgeR2Hotel();
+	if ($('.selec-Children-hotelR1').val() == '1') ageDoneR2Hotel();
+	if ($('.selec-Children-hotelR1').val() == '2') re1l2HotelR2();
+	if ($('.selec-Children-hotelR1').val() == '3') re1l3HotelR2();
+	if ($('.selec-Children-hotelR1').val() == '4') re1l4HotelR2();
+	if ($('.selec-Children-hotelR1').val() == '5') re1l5HotelR2();
+	if ($('.selec-Children-hotelR1').val() == '6') re1l6HotelR2();	
+}
+function re1l2HotelR2() {
+	if ($('.2kid-R2hotel').val() == '0') doAgeR2Hotel();
+	else if ($('.2kid-R2hotel').val() >= '1'  &&  $('.1stkid-R2hotel').val() >= '1') ageDoneR2Hotel();
+}
+
+
+/* End Hotel Logic1 Room2*/
 
 /*   Apartment Logic 1 */
 
