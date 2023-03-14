@@ -117,6 +117,7 @@ $(function() {
 
 	
 	$('#dash-room2').hide();
+	$('#dash-room3').hide();
 	
  });
 
@@ -147,7 +148,8 @@ $(document).ready(function()
 
 		$('.selec-Rooms-hotel').on('change', function(){
 			if ($('.selec-Rooms-hotel').val() == '1') hideAllRooms();
-			else if ($('.selec-Rooms-hotel').val() == '2') showRoom1();
+			else if ($('.selec-Rooms-hotel').val() == '2') showRoom2();
+			else if ($('.selec-Rooms-hotel').val() == '3') showRoom3();
 		})  
 
 
@@ -2522,17 +2524,22 @@ function hero1Services () {
 
 	function hideAllRooms() {
 		$('#dash-room2').hide();
+		$('#dash-room3').hide();
 		
 		
 
 	}
 
 
-function showRoom1() {
+function showRoom2() {
 	$('#dash-room2').show();
+	$('#dash-room3').hide();
 }
 
-
+function showRoom3() {
+	$('#dash-room3').show();
+	$('#dash-room2').show();
+}
 
 
 
