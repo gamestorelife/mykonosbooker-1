@@ -29,7 +29,7 @@
 @media screen and (max-width: 4100px) and (min-width: 1190px), (min-width: 4200px)
 {
 	#main2img {
-		display: flex;
+		display: none;
 	}
 }
 
